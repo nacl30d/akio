@@ -72,12 +72,12 @@
 	<meta property="og:title" content="AKIKO|空きコマ調整ツール"/>
 	<meta property="og:site-name" content="AKIO|空きコマ調整ツール"/>
 	<meta property="og:description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO"/>
-	<meta property="og:image" content="http://cysq4da-atk-app000.c4sa.net/container/OGP.png"/>
+	<meta property="og:image" content="http://cysq4da-atk-app000.c4sa.net/img/OGP.png"/>
 	<meta property="og:url" content="http://cysq4da-atk-app000.c4sa.net/"/>
 	<meta property="og:type" content="website"/>
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:image:src" content="http://cysq4da-atk-app000.c4sa.net/container/AKIO.png" />
-  <link rel="apple-touch-icon" href="/container/AKIO.png" />
+	<meta name="twitter:image:src" content="http://cysq4da-atk-app000.c4sa.net/img/AKIO.png" />
+  	<link rel="apple-touch-icon" href="/img/AKIO.png" />
 
 	<title>AKIO</title>
 </head>
@@ -146,7 +146,7 @@
 	</span>
     <div class="card horizontal">
       <div class="card-image">
-        <img src="/container/OGP.png" alt="AKIO" />
+        <img src="/img/OGP.png" alt="AKIO" />
       </div>
     </div>
 		
@@ -168,7 +168,7 @@
     	<h5 class="green-text">step.1</h5>
         <div class="card">
             <div class="card-image">
-              <img src="/container/step1.png" alt="step1">
+              <img src="/img/step1.png" alt="step1">
               <!-- <span class="card-title">step. 1</span> -->
             </div>
             <div class="card-content">
@@ -180,7 +180,7 @@
     	<h5 class="green-text">step.2</h5>
         <div class="card">
             <div class="card-image">
-              <img src="/container/step2.png" alt="step2">
+              <img src="/img/step2.png" alt="step2">
               <!-- <span class="card-title">step. 2</span> -->
             </div>
             <div class="card-content">
@@ -192,7 +192,7 @@
     	<h5 class="green-text">step.3</h5>
         <div class="card">
             <div class="card-image">
-              <img src="/container/step3.png" alt="step3">
+              <img src="/img/step3.png" alt="step3">
               <!-- <span class="card-title">step. 3</span> -->
             </div>
             <div class="card-content">

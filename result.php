@@ -94,12 +94,12 @@
 	<meta name="description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO">
 	<meta property="og:title" <?php echo 'content="',h($info['formName']),'|AKIKO"'; ?>/>
 	<meta property="og:description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO"/>
-	<meta property="og:image" content="http://cysq4da-atk-app000.c4sa.net/container/OGP.png"/>
+	<meta property="og:image" content="http://cysq4da-atk-app000.c4sa.net/img/OGP.png"/>
 	<meta property="og:url" content="http://cysq4da-atk-app000.c4sa.net/"/>
 	<meta property="og:type" content="website"/>
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:image:src" content="http://cysq4da-atk-app000.c4sa.net/container/AKIO.png" />
-	<link rel="apple-touch-icon" href="/container/AKIO.png" />
+	<meta name="twitter:image:src" content="http://cysq4da-atk-app000.c4sa.net/img/AKIO.png" />
+	<link rel="apple-touch-icon" href="/img/AKIO.png" />
 
 	<title><?php echo h($info['formName']); ?>｜AKIO</title>
 </head>
