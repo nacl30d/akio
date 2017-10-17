@@ -1,9 +1,9 @@
 <?php
 // データベース接続に必要な情報
-    $host = "175.184.35.36";
-    $db_name ="cysq4da_al4";
-    $db_user = "cysq4da_al4";
-    $db_passwd = "ENUaI9oB";
+    $host = "127.0.0.1:55930";
+    $db_name ="akico";
+    $db_user = "d-salt";
+    $db_passwd = "gfcy2423";
 
 // リダイレクトする際の自サイトの情報
-    $url = "http://cysq4da-atk-app000.c4sa.net/";
+    $url = "http://akico.azurewebsites.net/";
