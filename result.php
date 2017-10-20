@@ -214,7 +214,7 @@
   		<h5 class="green-text">共有</h5>
 		<?php echo '<input type="text" name="url" value="http://http://akico.azurewebsites.net//result.php?n='.$_GET['n'].'" onclick="this.select(0,this.value.length)">'; ?>
 		<!-- LINE -->
-		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" <?php echo 'data-url="http://http://akico.azurewebsites.net//result.php?n='.$n.'"' ?>></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" <?php echo 'data-url="http://http://akico.azurewebsites.net/result.php?n='.$n.'"' ?>></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 	</div>
 </div>	
 	
