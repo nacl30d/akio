@@ -3,8 +3,8 @@
 // DB接続
 function connectDB()
 {
-    require_once('./conf/config.php');
-	$dsn = "mysql:dbname=$db_name;host=$host;port=$port; charset=utf8;";
+    require_once('/conf/config.php');
+	$dsn = "mysql:dbname=$db_name;host=$host;port=$port;charset=utf8;";
 	
 	try {
 		$pdo = new PDO($dsn, $db_user, $db_passwd);
