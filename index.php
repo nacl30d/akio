@@ -15,7 +15,6 @@
 			':n' => $n,
 			]);
 		if(!$result){
-      var_dump($sql, $statement);
 			exit('DB ErrorA (failed to add record)'); //入に失敗したエラーメッセージ
 		}
 
