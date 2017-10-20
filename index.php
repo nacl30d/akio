@@ -1,5 +1,5 @@
 <?php
-    require_once('./conf/functions.php');
+    require_once('/conf/functions.php');
 	session_start();
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -33,7 +33,7 @@
 		}
 
 		#次のページにリダイレクト
-		$redirect = "./result.php?n=" . $n; //フォームページはidごとに動的なURLを発行
+		$redirect = "/result.php?n=" . $n; //フォームページはidごとに動的なURLを発行
 		header("Location: $redirect");
 		exit();
 	}
@@ -59,10 +59,10 @@
 	<!-- /End GoogleAnalytics -->
 
 	<!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <script type="text/javascript" src="./js/myscript.js"></script>
+    <script type="text/javascript" src="/js/myscript.js"></script>
 
     <!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
