@@ -4,7 +4,7 @@
     $port = "55930";
     $db_name ="akico";
     $db_user = "azure";
-    //$db_passwd = "gfcy2423";
+    $db_passwd = "6#vWHD_$";
 
 // リダイレクトする際の自サイトの情報
     $url = "http://akico.azurewebsites.net/";
