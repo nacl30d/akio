@@ -3,8 +3,8 @@
     $host = "127.0.0.1";
     $port = "55930";
     $db_name ="akico";
-    $db_user = "d-salt";
-    $db_passwd = "gfcy2423";
+    $db_user = "azure";
+    //$db_passwd = "gfcy2423";
 
 // リダイレクトする際の自サイトの情報
     $url = "http://akico.azurewebsites.net/";

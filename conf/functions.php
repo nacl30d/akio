@@ -7,7 +7,7 @@ function connectDB()
 	$dsn = "mysql:dbname=$db_name;host=$host;port=$port; charset=utf8;";
 	
 	try {
-		$pdo = new PDO($dsn, $db_user, $db_passwd);
+		$pdo = new PDO($dsn, $db_user);//, $db_passwd);
 	} catch (PDOException $e) {
 		die('DB Connection Faild');
 	}
