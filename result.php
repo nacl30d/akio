@@ -94,11 +94,11 @@
 	<meta name="description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO">
 	<meta property="og:title" <?php echo 'content="',h($info['formName']),'|AKIKO"'; ?>/>
 	<meta property="og:description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO"/>
-	<meta property="og:image" content="http://cysq4da-atk-app000.c4sa.net/img/OGP.png"/>
-	<meta property="og:url" content="http://cysq4da-atk-app000.c4sa.net/"/>
+	<meta property="og:image" content="http://http://akico.azurewebsites.net//img/OGP.png"/>
+	<meta property="og:url" content="http://http://akico.azurewebsites.net//"/>
 	<meta property="og:type" content="website"/>
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:image:src" content="http://cysq4da-atk-app000.c4sa.net/img/AKIO.png" />
+	<meta name="twitter:image:src" content="http://http://akico.azurewebsites.net//img/AKIO.png" />
 	<link rel="apple-touch-icon" href="/img/AKIO.png" />
 
 	<title><?php echo h($info['formName']); ?>｜AKIO</title>
@@ -212,9 +212,9 @@
 			</form>
 		</div>
   		<h5 class="green-text">共有</h5>
-		<?php echo '<input type="text" name="url" value="http://cysq4da-atk-app000.c4sa.net/result.php?n='.$_GET['n'].'" onclick="this.select(0,this.value.length)">'; ?>
+		<?php echo '<input type="text" name="url" value="http://http://akico.azurewebsites.net//result.php?n='.$_GET['n'].'" onclick="this.select(0,this.value.length)">'; ?>
 		<!-- LINE -->
-		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" <?php echo 'data-url="http://cysq4da-atk-app000.c4sa.net/result.php?n='.$n.'"' ?>></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" <?php echo 'data-url="http://http://akico.azurewebsites.net//result.php?n='.$n.'"' ?>></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 	</div>
 </div>	
 	
@@ -240,11 +240,11 @@
           <h5 class="white-text">Share</h5>
           <ul>
           	<!-- LINE -->
-            <li><div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" data-url="http://cysq4da-atk-app000.c4sa.net/"></div></li>
+            <li><div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" data-url="http://http://akico.azurewebsites.net//"></div></li>
             <!-- Twitter -->
             <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></li>
             <!-- Facebook -->
-            <li><div class="fb-share-button" data-href="http://cysq4da-atk-app000.c4sa.net" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcysq4da-atk-app000.c4sa.net%2F&amp;src=sdkpreparse">シェア</a></div></li>
+            <li><div class="fb-share-button" data-href="http://http://akico.azurewebsites.net/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhttp://akico.azurewebsites.net/%2F&amp;src=sdkpreparse">シェア</a></div></li>
           </ul>
         </div>
       </div>
