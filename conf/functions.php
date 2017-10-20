@@ -4,7 +4,7 @@
 function connectDB()
 {
     require_once('./conf/config.php');
-	$dsn = "mysql:dbname=$db_name;host=$host;charset=utf8;";
+	$dsn = "mysql:dbname=$db_name;host=$host;port=$port; charset=utf8;";
 	
 	try {
 		$pdo = new PDO($dsn, $db_user, $db_passwd);
