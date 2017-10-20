@@ -15,7 +15,7 @@
 			':n' => $n,
 			]);
 		if(!$result){
-			exit('DB Error (failed to add record)'); //入に失敗したエラーメッセージ
+			exit('DB ErrorA (failed to add record)'); //入に失敗したエラーメッセージ
 		}
 
 		#レコードを作成
