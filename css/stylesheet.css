@@ -16,7 +16,153 @@
     }
 }
 
-
+/* ---2017-10-30--- */
+div.modal {
+02.
+position: relative;
+03.
+display:none;
+04.
+z-index:9999;
+05.
+}
+06.
+div.modal .pr_box {
+07.
+width:500px;
+08.
+height:auto;
+09.
+margin:auto;
+10.
+box-shadow:0px 0px 12px rgba(0,0,0,0.4);
+11.
+padding:40px;
+12.
+background:#FFFFFF;
+13.
+}
+14.
+.pr_box img:hover {
+15.
+filter: alpha(opacity=50);
+16.
+-webkit-opacity:0.50;
+17.
+-moz-opacity:0.50;
+18.
+-ms-opacity:0.50;
+19.
+-o-opacity:0.50;
+20.
+opacity:0.50;
+21.
+}
+22.
+.close_modal{
+23.
+display: block;
+24.
+width: 180px;
+25.
+line-height:50px;
+26.
+display: inline-table;
+27.
+-webkit-transition: all 200ms linear;
+28.
+-moz-transition: all 200ms linear;
+29.
+-o-transition: all 200ms linear;
+30.
+transition: all 200ms linear;
+31.
+-webkit-transition: all 300ms linear;
+32.
+-moz-transition: all 300ms linear;
+33.
+-o-transition: all 300ms linear;
+34.
+transition: all 300ms linear;
+35.
+color: #fff;
+36.
+border: 2px solid #018ad1;
+37.
+background: #018ad1;
+38.
+*display: inline;
+39.
+*zoom: 1;
+40.
+}
+41.
+.close_modal:hover {
+42.
+text-decoration: none;
+43.
+display: inline-table;
+44.
+color: #018ad1;
+45.
+border: 2px solid #018ad1;
+46.
+background: #fff;
+47.
+}
+48.
+.close_modal_no{
+49.
+display: block;
+50.
+width: 180px;
+51.
+line-height:50px;
+52.
+display: inline-table;
+53.
+-webkit-transition: all 200ms linear;
+54.
+-moz-transition: all 200ms linear;
+55.
+-o-transition: all 200ms linear;
+56.
+transition: all 200ms linear;
+57.
+-webkit-transition: all 300ms linear;
+58.
+-moz-transition: all 300ms linear;
+59.
+-o-transition: all 300ms linear;
+60.
+transition: all 300ms linear;
+61.
+color: #fff;
+62.
+border: 2px solid #60cfff;
+63.
+background: #60cfff;
+64.
+*display: inline;
+65.
+*zoom: 1;
+66.
+}
+67.
+.close_modal_no:hover {
+68.
+text-decoration: none;
+69.
+display: inline-table;
+70.
+color: #018ad1;
+71.
+border: 2px solid #60cfff;
+72.
+background: #fff;
+73.
+}
+/* ---------------- */
 table {
     border-collapse: separate;
     border-spacing: 3px;
