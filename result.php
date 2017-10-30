@@ -24,6 +24,8 @@
 	$statement->execute([':n' => $n]);
 	$ans = $statement->fetch(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
 	if (!$ans) {
+		http_response_code( 404 ) ;
+		header( "Location: http://akico.azurewebsites.net/404.html" ) ;
 		exit('DB Error B (faild to get record)');
 	}
 	//名前を取得
@@ -32,6 +34,8 @@
 	$statement->execute([':n' => $n]);
 	$name = $statement->fetchAll(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
 	if (!$name) {
+		http_response_code( 404 ) ;
+		header( "Location: http://akico.azurewebsites.net/404.html" ) ;
 		exit('DB Error C (faild to get record)');
 	}
 	//行数を取得
@@ -40,6 +44,8 @@
 	$statement->execute([':n' => $n]);
 	$count = $statement->fetch(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
 	if (!$count) {
+		http_response_code( 404 ) ;
+		header( "Location: http://akico.azurewebsites.net/404.html" ) ;
 		exit('DB Error D (faild to get record)');
 	}
 
@@ -139,7 +145,7 @@
 	</script>
 
 	<!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 <!-- /End config -->
 
