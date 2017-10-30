@@ -9,7 +9,7 @@
 	$pdo = connectDB();
 	#時間割情報をDBから取得し、変数$ansに格納（id以外）
 	//全般的な情報を取得
-	$sql = "SELECT formName, notice FROM informations WHERE n = :n;";
+	$sql = "SELECT formName, notice FROM informations WHERE id = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$info = $statement->fetch(PDO::FETCH_ASSOC);
