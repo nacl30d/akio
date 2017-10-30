@@ -146,8 +146,8 @@
 <div id="layer_board_area">
 	<div class="layer_board_bg"></div>
 	<div class="layer_board">
-		<p><a href="http://www.yahoo.co.jp" target="_blank"><img src="img/img.jpg" /></a></p>
-		<p class="btn_close"><a href="#"><img src="img/bnt_close.png" alt="close" width="63" height="12" /></a></p>
+		<p>hoge</p>
+		<p class="btn_close"><a href="./">close</a></p>
 	</div>
 </div>
 <!-- //layer_board -->
