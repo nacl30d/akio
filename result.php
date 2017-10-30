@@ -15,6 +15,7 @@
 	$info = $statement->fetch(PDO::FETCH_ASSOC);
 	if (!$info) {
 		http_response_code( 404 ) ;
+		header( "Location: http://akico.azurewebsites.net/404.html" ) ;
 		exit('DB Effor A(faild to get record)');
 	}
 	//時間割情報を取得
