@@ -26,7 +26,7 @@
 		exit('DB Error B (faild to get record)');
 	}
 	//名前を取得
-	$sql = "SELECT name FROM answers WHERE n = :n;";
+	$sql = "SELECT name FROM answers WHERE id = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$name = $statement->fetchAll(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
@@ -34,7 +34,7 @@
 		exit('DB Error C (faild to get record)');
 	}
 	//行数を取得
-	$sql = "SELECT count(name) FROM answers WHERE n = :n;";
+	$sql = "SELECT count(name) FROM answers WHERE id = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$count = $statement->fetch(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
