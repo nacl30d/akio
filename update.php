@@ -57,6 +57,21 @@
 	</script>
 	<!-- /End GoogleAnalytics -->
 
+	<!-- 2017-10-30 -->
+	<link rel="stylesheet" type="text/css" href="css/layerBoard.css" media="all" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.layerBoard.js"></script>
+	<script>
+	$(function(){
+
+		$('#layer_board_area').layerBoard({alpha:0.5});
+
+	})
+	</script>
+	<!-- /End 2017-10-30 -->
+
 	<!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
@@ -122,6 +137,18 @@
      </div>
  </nav>
   <!-- /End navibar -->
+
+  <!-- layer_board -->
+<div id="layer_board_area">
+	<div class="layer_board_bg"></div>
+	<div class="layer_board">
+		<p>URLが新しくなりました。再度登録をお願いします。<br>
+			従来のURLでは2017年11月1日以降アクセスできません。<br>
+		新URL: http://akico.azurewebsites.net/</p>
+		<p class="btn_close" font="blue"><a href="./">CLOSE</a></p>
+	</div>
+</div>
+<!-- //layer_board -->
 
 <div class="row">
     <div class="col l6 offset-l3 s12 ">
