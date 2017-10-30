@@ -65,13 +65,13 @@
 	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
 	<script src="js/jquery.cookie.js"></script>
 	<script src="js/jquery.layerBoard.js"></script>
-	<script>
+<!-- 	<script>
 		$(function(){
  
 		$('#layer_board_area').layerBoard({alpha:0.5});
  
 		})
-	</script>
+	</script> -->
 	<!-- /End 2017-10-30 -->
 
 	<!--Import materialize.css-->
