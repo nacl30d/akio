@@ -62,7 +62,7 @@
 	<link rel="stylesheet" type="text/css" href="css/layerBoard.css" media="all" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
 	<script src="js/jquery.cookie.js"></script>
 	<script src="js/jquery.layerBoard.js"></script>
 	<script>
