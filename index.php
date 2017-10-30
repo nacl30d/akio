@@ -143,12 +143,16 @@
 
 
 <!-- layer_board -->
-<div id="layer_board_area">
-	<div class="layer_board_bg"></div>
-	<div class="layer_board">
-		<p>hoge</p>
-		<p class="btn_close"><a href="./">close</a></p>
-	</div>
+<div class="modal">
+<div class="pr_box">
+<div class="disclaimer_inner">
+<p>【モーダルウィンドウ表示】</p>
+<div class="disclaimer_bt">
+<p class="mg01 red">はいをクリックしてください。</p>
+<p><a class="close_modal" href="javascript:;" href="/">はい</a>&nbsp;&nbsp;<a class="close_modal_no" href="http://www.kingsite.jp">いいえ</a>
+</div>
+</div>
+</div>
 </div>
 <!-- //layer_board -->
 
