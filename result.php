@@ -3,13 +3,13 @@
 	session_start();
 
 	//URLに含まれている記事のIDを取得
-	$n = $_GET['id'];
+	$n = $_GET['n'];
 	$redirect = "./update.php?n=" . $n; //フォームページはidごとに動的なURLを発行
 	#DB接続
 	$pdo = connectDB();
 	#時間割情報をDBから取得し、変数$ansに格納（id以外）
 	//全般的な情報を取得
-	$sql = "SELECT formName, notice FROM informations WHERE id = :n;";
+	$sql = "SELECT formName, notice FROM informations WHERE n = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$info = $statement->fetch(PDO::FETCH_ASSOC);
@@ -26,7 +26,7 @@
 		exit('DB Error B (faild to get record)');
 	}
 	//名前を取得
-	$sql = "SELECT name FROM answers WHERE id = :n;";
+	$sql = "SELECT name FROM answers WHERE n = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$name = $statement->fetchAll(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
@@ -34,7 +34,7 @@
 		exit('DB Error C (faild to get record)');
 	}
 	//行数を取得
-	$sql = "SELECT count(name) FROM answers WHERE id = :n;";
+	$sql = "SELECT count(name) FROM answers WHERE n = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$count = $statement->fetch(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
