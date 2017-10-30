@@ -145,7 +145,7 @@ $(function(){
 	<div class="layer_board_bg"></div>
 	<div class="layer_board">
 		<p>URLが新しくなりました。再度登録をお願いします。</p>
-		<p class="btn_close"><a href="#"><img src="/img/bnt_close.png" alt="close" width="63" height="12" /></a></p>
+		<p class="btn_close"><a href="./"><img src="/img/bnt_close.png" alt="close" width="63" height="12" /></a></p>
 	</div>
 </div>
 <!-- //layer_board -->
