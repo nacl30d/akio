@@ -61,18 +61,16 @@
 	<!-- 2017-10-30 -->
 	<link rel="stylesheet" type="text/css" href="css/layerBoard.css" media="all" />
 
-	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
-	<script src="/js/jquery.cookie.js"></script>
-	<script src="/js/jquery.layerBoard.js"></script>
-<!-- 	<script>
-		$(function(){
- 
-		$('#layer_board_area').layerBoard({alpha:0.5});
- 
-		})
-	</script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.layerBoard.js"></script>
+<script>
+$(function(){
+
+	$('#layer_board_area').layerBoard({alpha:0.5});
+
+})
+</script>
 	<!-- /End 2017-10-30 -->
 
 	<!--Import materialize.css-->
@@ -142,18 +140,13 @@
  </nav>
   <!-- /End navibar -->
 
-
 <!-- layer_board -->
-<div class="modal">
-<div class="pr_box">
-<div class="disclaimer_inner">
-<p>【モーダルウィンドウ表示】</p>
-<div class="disclaimer_bt">
-<p class="mg01 red">はいをクリックしてください。</p>
-<p><a class="close_modal" href="javascript:;" href="/">はい</a>&nbsp;&nbsp;<a class="close_modal_no" href="http://www.kingsite.jp">いいえ</a>
-</div>
-</div>
-</div>
+<div id="layer_board_area">
+	<div class="layer_board_bg"></div>
+	<div class="layer_board">
+		<p><a href="http://www.yahoo.co.jp" target="_blank"><img src="/img/img.jpg" /></a></p>
+		<p class="btn_close"><a href="#"><img src="/img/bnt_close.png" alt="close" width="63" height="12" /></a></p>
+	</div>
 </div>
 <!-- //layer_board -->
 
