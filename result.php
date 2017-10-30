@@ -14,6 +14,7 @@
 	$statement->execute([':n' => $n]);
 	$info = $statement->fetch(PDO::FETCH_ASSOC);
 	if (!$info) {
+		var_dump($statement);
 		exit('DB Effor A(faild to get record)');
 	}
 	//時間割情報を取得
