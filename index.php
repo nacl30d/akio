@@ -58,6 +58,19 @@
 	</script>
 	<!-- /End GoogleAnalytics -->
 
+	<!-- 2017-10-30 -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.layerBoard.js"></script>
+	<script>
+		$(function(){
+ 
+		$('#layer_board_area').layerBoard({alpha:0.5});
+ 
+		})
+	</script>
+	<!-- /End 2017-10-30 -->
+
 	<!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
@@ -125,6 +138,18 @@
  </nav>
   <!-- /End navibar -->
 
+
+<!-- layer_board -->
+<div id="layer_board_area">
+	<div class="layer_board_bg"></div>
+	<div class="layer_board">
+		<p><a href="http://www.yahoo.co.jp" target="_blank"><img src="img/img.jpg" /></a></p>
+		<p class="btn_close"><a href="#"><img src="img/bnt_close.png" alt="close" width="63" height="12" /></a></p>
+	</div>
+</div>
+<!-- //layer_board -->
+
+
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
 　
@@ -137,6 +162,8 @@
 
 </div>
 </div>
+
+
 
 <div class="container">
 <div class="row center">
