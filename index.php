@@ -61,7 +61,8 @@
 	<!-- 2017-10-30 -->
 	<link rel="stylesheet" type="text/css" href="css/layerBoard.css" media="all" />
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
 	<script src="/js/jquery.cookie.js"></script>
 	<script src="/js/jquery.layerBoard.js"></script>
@@ -116,7 +117,7 @@
 	</script>
 
 	<!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
       <script type="text/javascript" src="js/materialize.min.js"></script>
 <!-- /End config -->
 
