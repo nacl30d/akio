@@ -177,7 +177,7 @@
 		<p>URLが新しくなりました。再度登録をお願いします。<br>
 			従来のURLでは2017年11月1日以降アクセスできません。<br>
 		新URL: http://akico.azurewebsites.net/</p>
-		<?php echo ('<p class="btn_close" font="blue"><a href="/result.php?='.$n.'">CLOSE</a></p>');?>
+		<?php echo ('<p class="btn_close" font="blue"><a href="http://akico.azurewebsites.net/result.php?='.$n.'">CLOSE</a></p>');?>
 	</div>
 </div>
 <!-- //layer_board -->
