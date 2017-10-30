@@ -144,7 +144,7 @@ $(function(){
 <div id="layer_board_area">
 	<div class="layer_board_bg"></div>
 	<div class="layer_board">
-		<p><a href="http://www.yahoo.co.jp" target="_blank"><img src="/img/img.jpg" /></a></p>
+		<p>URLが新しくなりました。再度登録をお願いします。</p>
 		<p class="btn_close"><a href="#"><img src="/img/bnt_close.png" alt="close" width="63" height="12" /></a></p>
 	</div>
 </div>
