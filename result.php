@@ -3,7 +3,7 @@
 	session_start();
 
 	//URLに含まれている記事のIDを取得
-	$n = $_GET['n'];
+	$n = $_GET['id'];
 	$redirect = "./update.php?n=" . $n; //フォームページはidごとに動的なURLを発行
 	#DB接続
 	$pdo = connectDB();
