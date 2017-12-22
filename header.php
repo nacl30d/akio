@@ -1,4 +1,4 @@
-config -->
+<!-- config -->
 	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 <script>(function(d, s, id) {
