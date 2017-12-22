@@ -53,44 +53,47 @@
 <?php include('header.php'); ?>
 
 <div class="row">
-    <div class="col l6 offset-l3 s12 ">
-		<h5 class="green-text">名前を入力！</h5>
-	</div>		
-</div>			
+    		
+
 <div class="row center">
     <div class="col l6 offset-l3 s12 ">
    	 <form action="" method="POST" id="insertForm">
-			<div class="input-field">
-          		<i class="material-icons prefix">account_circle</i>
-          		<input id="icon_prefix" type="text" class="validate" name="name">
-          		<label for="icon_prefix">Name</label>
-          	</div>
-        <!-- <p>Name:</p><input type="text" name="name" value="名無し" /> -->
-<div class="row">
-    <div class="col l6 offset-l3 s12 ">
-			<h5 class="green-text">タップして空きコマ情報を入力！</h5>
-	</div>
-</div>
-			<table class="update">
-				<tr><th></th><th>Mon.</th><th>Tue.</th><th>Wed.</th><th>Thu.</th><th>Fri.</th></tr>
-				<?php
-					//テーブル生成（各tdにidを割り振る）
-					$num = 0;
-					for ($i = 1; $i < 6 ; $i++) { 
-						echo '<tr>','<th>', $i ,'</th>';
-						for ($j = 1; $j < 6 ; $j++) { 
-	 						echo '<td ' , 'id="'.$num.'" ' , 'class="ng"' , ' onClick="judge('.$num.')"' , '>' , '<input type="hidden" name="ans[]"'.' id="a'.$num.'"'.' value="0">' , '</td>';//各tdにidを発行（クリックイベント用）、onClickで各idを渡す。
-	 						$num++;
-						}
-						echo '</tr>' , PHP_EOL;
-					}
-				?>
-			</table>
-			<input class="btn" type="submit" value="登録" name="insert" >
-		</form>
-	</div>
-</div>
 
+        <!-- <p>Name:</p><input type="text" name="name" value="名無し" /> -->
+		<div class="row">
+    		<div class="col l6 offset-l3 s12 ">
+
+    			<br />
+				<h5 class="green-text">タップして空きコマ情報を入力！</h5>
+				<table class="update">
+					<tr><th></th><th>Mon.</th><th>Tue.</th><th>Wed.</th><th>Thu.</th><th>Fri.</th></tr>
+					<?php
+						//テーブル生成（各tdにidを割り振る）
+						$num = 0;
+						for ($i = 1; $i < 6 ; $i++) { 
+							echo '<tr>','<th>', $i ,'</th>';
+							for ($j = 1; $j < 6 ; $j++) { 
+			 					echo '<td ' , 'id="'.$num.'" ' , 'class="ng"' , ' onClick="judge('.$num.')"' , '>' , '<input type="hidden" name="ans[]"'.' id="a'.$num.'"'.' value="0">' , '</td>';//各tdにidを発行（クリックイベント用）、onClickで各idを渡す。
+ 								$num++;
+							}
+							echo '</tr>' , PHP_EOL;
+						}
+					?>
+				</table>
+
+				<br />
+				<h5 class="green-text">名前を入力！</h5>
+				<div class="input-field">
+       				<i class="material-icons prefix">account_circle</i>
+		       		<input id="icon_prefix" type="text" class="validate" name="name">
+       				<label for="icon_prefix">Name</label>
+       			</div>
+       			<input class="btn" type="submit" value="登録" name="insert" >
+			</div>
+		</div>
+	</form>
+	</div>
+</div>
 
 <?php include('footer.php'); ?>
 
