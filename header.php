@@ -1,4 +1,4 @@
-<!-- config -->
+config -->
 	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -43,7 +43,7 @@
   <!-- /End navibar -->
 
 <!-- layer_board -->
-<div id="layer_board_area">
+<!-- <div id="layer_board_area">
 	<div class="layer_board_bg"></div>
 	<div class="layer_board">
 		<p>URLが新しくなりました。再度登録をお願いします。<br>
@@ -51,5 +51,5 @@
 		新URL: http://akico.azurewebsites.net/</p>
 		<p class="btn_close" font="blue"><a href="#">CLOSE</a></p>
 	</div>
-</div>
-<!-- //layer_board -->
+</div> -->
+<!-- //layer_board
