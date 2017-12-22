@@ -1,5 +1,5 @@
 <?php
-    require_once('/conf/functions.php');
+    require_once('./conf/functions.php');
 	session_start();
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -44,115 +44,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="utf-8">
-	<!-- GoogleAnalytics -->
-	<script>
-  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  	ga('create', 'UA-102690858-1', 'auto');
-  	ga('send', 'pageview');
-
-	</script>
-	<!-- /End GoogleAnalytics -->
-
-	<!-- 2017-10-30 -->
-	<link rel="stylesheet" type="text/css" href="css/layerBoard.css" media="all" />
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="js/jquery.cookie.js"></script>
-	<script src="js/jquery.layerBoard.js"></script>
-	<script>
-	$(function(){
-
-		$('#layer_board_area').layerBoard({alpha:0.5});
-
-	})
-	</script>
-	<!-- /End 2017-10-30 -->
-
-	<!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <script type="text/javascript" src="/js/myscript.js"></script>
-
-    <!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<?php include('./meta.php'); ?>
 
 	<!-- meta tags for Share -->
-	<meta name="description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO">
-	<meta property="og:title" content="AKIKO|空きコマ調整ツール"/>
-	<meta property="og:site-name" content="AKIO|空きコマ調整ツール"/>
-	<meta property="og:description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO"/>
-	<meta property="og:image" content="http://http://akico.azurewebsites.net//img/OGP.png"/>
-	<meta property="og:url" content="http://http://akico.azurewebsites.net//"/>
-	<meta property="og:type" content="website"/>
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:image:src" content="http://http://akico.azurewebsites.net//img/AKIO.png" />
-  	<link rel="apple-touch-icon" href="/img/AKIO.png" />
-
+	<meta property="og:title" content="AKIKO" />
+	<meta property="og:url" content="http://akico.azurewebsites.net/" />
 	<title>AKIO</title>
 </head>
 <body>
-<!-- config -->
-	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- Load LINE SDK for Javascript -->
-	<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
-	<!-- Load Twitter SDK for Javascript -->
-	<script>
-	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-	</script>
-
-	<!--Import jQuery before materialize.js-->
-      <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-<!-- /End config -->
-
-<!-- navibar -->
- <nav class="green darken-4" role="navigation">
- 	<div class="nav-wrapper container">
- 		<a href="./" class="brand-logo">AKIO</a>
- 		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
- 		<ul class="right hide-on-med-and-down">
-        	<li><a href="/#about">About</a></li>
-        	<li><a href="/#howto">How to</a></li>
-        	<li><a href="/#create">Create</a></li>
- 		</ul>
-
- 		<ul class="side-nav" id="mobile-demo">
-          <li><a href="/" target="_blank">Top</a></li>
-        	<li><a href="/#about">About</a></li>
-        	<li><a href="/#howto">How to</a></li>
-        	<li><a href="/#create">Create</a></li>
-      </ul>
-     </div>
- </nav>
-  <!-- /End navibar -->
-
-<!-- layer_board -->
-<div id="layer_board_area">
-	<div class="layer_board_bg"></div>
-	<div class="layer_board">
-		<p>URLが新しくなりました。再度登録をお願いします。<br>
-			従来のURLでは2017年11月1日以降アクセスできません。<br>
-		新URL: http://akico.azurewebsites.net/</p>
-		<p class="btn_close" font="blue"><a href="./">CLOSE</a></p>
-	</div>
-</div>
-<!-- //layer_board -->
-
-
+<?php include('./header.php'); ?>
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
 　
@@ -165,8 +65,6 @@
 
 </div>
 </div>
-
-
 
 <div class="container">
 <div class="row center">
@@ -257,43 +155,6 @@
 </div>
 
 </div>
-
-<!-- footer -->
-<footer class="page-footer green">
-    <div class="container">
-      <div class="row">
-        <div class="col l3 s12">
-          <h5 class="white-text">D.Salt</h5>
-          <p class="grey-text text-lighten-4">This tool made for University Students. I hope your campus life will be better.</p>
-        </div>
-        <div class="col l3 s12">	
-          <h5 class="white-text">Special Thanks</h5>
-          <ul>
-            <li><a class="white-text" href="https://www.nifty.com/" target="_bla">nifty</a></li>
-            <li><a class="white-text" href="http://www.myjlab.org/" target="_bla">Miyaji Lab</a></li>
-            <li><a class="white-text" href="http://matsuzawalab.si.aoyama.ac.jp/pub/intro/" target="_bla">Matsuzawa Lab</a></li>
-            <li><a class="white-text" href="http://www.si.aoyama.ac.jp/" target="_bla">青山学院大学 社会情報学部</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Share</h5>
-          <ul>
-          	<!-- LINE -->
-            <li><div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" data-url="http://http://akico.azurewebsites.net//"></div></li>
-            <!-- Twitter -->
-            <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></li>
-            <!-- Facebook -->
-            <li><div class="fb-share-button" data-href="http://http://akico.azurewebsites.net/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhttp://akico.azurewebsites.net/%2F&amp;src=sdkpreparse">シェア</a></div></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="https://twitter.com/d__salt" target="_bla">D_Salt</a>
-      </div>
-    </div>
-  </footer>
-  <!-- /End footer -->
+<?php include('footer.php'); ?>
 </body>
 </html>
