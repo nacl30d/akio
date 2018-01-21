@@ -1,5 +1,5 @@
 <?php
-// データベース接続に必要な情報
+// Copy from https://blogs.msdn.microsoft.com/appserviceteam/2016/08/18/announcing-mysql-in-app-preview-for-web-apps/
 $host = '';
 $db_name = '';
 $db_user = '';
