@@ -18,6 +18,7 @@ foreach ($_SERVER as $key => $value) {
 
 $link = mysqli_connect($host, $db_user, $db_passwd,$db_name);
 
+
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
     echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
