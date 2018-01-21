@@ -68,3 +68,12 @@ table.update td {background: #e2eeff;}*/
     font-size: 3rem;
     padding:0 2rem 2rem;
 }
+
+.clr {
+    background: initial;
+    width: 20px;
+    height: 20px;
+    padding: initial;
+    text-align: center;
+    vertical-align: middle;
+}

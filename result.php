@@ -75,16 +75,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<?php include('meta.php'); ?>
-
-	<!-- meta tags for Share -->
-		<meta property="og:title" <?php echo 'content="',h($info['formName']),'|AKIKO"'; ?>/>
-		<meta property="og:url" content="http://akico.azurewebsites.net/"/>
-	
+	<?php include('meta.html'); ?>
 	<title><?php echo h($info['formName']); ?>｜AKIO</title>
 </head>
 <body>
-<?php include('header.php'); ?>
+<?php include('header.html'); ?>
 
 <div class="row">
     <div class="col l6 offset-l3 s12 ">
@@ -158,7 +153,7 @@
 </div>	
 	
 
-<?php include('footer.php'); ?>
+<?php include('footer.html'); ?>
 
 </body>
 </html>

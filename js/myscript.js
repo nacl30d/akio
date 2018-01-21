@@ -15,3 +15,22 @@ function judge(id) {
 
 
 
+function addRow() {
+	var hoge = document.getElementById('r5').innerHTML;
+	console.log(hoge);
+	document.getElementById('createForm').innerHTML += '<tr><th><input type="text" value="hoge" name="hoge" /></th>';
+	console.log(document.getElementById('createForm').innerHTML);
+	console.log(hoge);
+}
+
+function addCol() {
+	var head = document.getElementById('day').innerHTML;
+	head += '<th><input type="text" value="fuga" name="dx"/></th>';
+	console.log(document.getElementById('day'));
+	for (var i = 0; i < 5; i++) {
+		var row = document.getElementById('r'+i).innerHTML;
+		console.log(row);
+		row += '<td></td>';
+	}
+	console.log(document.getElementById('createForm').innerHTML);
+}

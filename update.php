@@ -41,16 +41,11 @@
 ?>
 
 <!DOCTYPE html>
-<?php include('meta.php') ?>
-
-	<!-- meta tags for Share -->
-	<meta property="og:title" content="入力画面|AKIKO"/>
-	<meta property="og:url" content="http://akico.azurewebsites.net/"/>
-	
+<?php include('meta.html') ?>
 	<title>予定を入力｜AKIO</title>
  </head>
 <body>
-<?php include('header.php'); ?>
+<?php include('header.html'); ?>
 
 <div class="row">
     		
@@ -95,7 +90,7 @@
 	</div>
 </div>
 
-<?php include('footer.php'); ?>
+<?php include('footer.html'); ?>
 
 </body>
 </html>

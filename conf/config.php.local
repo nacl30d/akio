@@ -1,0 +1,10 @@
+<?php
+// データベース接続に必要な情報
+    $host = "127.0.0.1";
+    $port = "3306";
+    $db_name ="akico";
+    $db_user = "root";
+    $db_passwd = "root";
+
+// リダイレクトする際の自サイトの情報
+    $url = "http://localhost:8000/";

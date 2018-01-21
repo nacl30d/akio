@@ -44,15 +44,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<?php include('./meta.php'); ?>
-
-	<!-- meta tags for Share -->
-	<meta property="og:title" content="AKIKO" />
-	<meta property="og:url" content="http://akico.azurewebsites.net/" />
+	<?php include('./meta.html'); ?>
 	<title>AKIO</title>
 </head>
 <body>
-<?php include('./header.php'); ?>
+<?php include('./header.html'); ?>
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
 　
@@ -155,6 +151,6 @@
 </div>
 
 </div>
-<?php include('footer.php'); ?>
+<?php include('footer.html'); ?>
 </body>
 </html>
