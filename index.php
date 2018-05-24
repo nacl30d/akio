@@ -3,7 +3,7 @@
 	session_start();
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		#DB接続
+		# DB接続
 		$pdo = connectDB();
 
 		#レコードを作成
