@@ -60,7 +60,7 @@
 			$max3 = $value;
 		}
 	}
-	
+
 	#得たansをテーブルに起こしやすくするため加工
 	$table = array_chunk($ans, 5, true); //5つごとに2次元化
 
@@ -88,7 +88,7 @@
 			echo '<h5>', $info['notice'], '</h5>', PHP_EOL;
 		?>
 	</div>
-</div>	
+</div>
 
 <div class="row">
     <div class="col l6 offset-l3 s12 ">
@@ -105,15 +105,15 @@
 					foreach ($row as $cell) {
 						//各セルに値を入力
 						if ($cell == 0) {
-							echo '<td class="zero">' , $cell , '</td>'; 
+							echo '<td class="zero">' , $cell , '</td>';
 						} else if ($cell == $max1) {
-							echo '<td class="max">' , $cell , '</td>'; 
+							echo '<td class="max">' , $cell , '</td>';
 						} else if ($cell == $max2) {
-							echo '<td class="mass">' , $cell , '</td>'; 
+							echo '<td class="mass">' , $cell , '</td>';
 						} else if ($cell == $max3) {
-							echo '<td class="less">' , $cell , '</td>'; 
+							echo '<td class="less">' , $cell , '</td>';
 						} else {
-							echo '<td class="zero">' , $cell , '</td>'; 
+							echo '<td class="zero">' , $cell , '</td>';
 						}
 					}
 					echo '</tr>' , PHP_EOL;
@@ -148,10 +148,10 @@
   		<h5 class="green-text">共有</h5>
 		<?php echo '<input type="text" name="url" value="http://akico.azurewebsites.net/result.php?n='.$_GET['n'].'" onclick="this.select(0,this.value.length)">'; ?>
 		<!-- LINE -->
-		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" <?php echo 'data-url="http://http://akico.azurewebsites.net/result.php?n='.$n.'"' ?>></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" data-url="http://http://akico.azurewebsites.net/result.php?n=<?= $n ?>"></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 	</div>
-</div>	
-	
+</div>
+
 
 <?php include('footer.html'); ?>
 

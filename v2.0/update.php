@@ -13,7 +13,7 @@
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':id' => $id]);
 	$dow = $statement->fetchAll(PDO::FETCH_ASSOC);
-	
+
 	$sql = "SELECT name FROM Units WHERE tableId = :id;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':id' => $id]);
@@ -44,8 +44,8 @@
 			':userId' => $userId['id'],
 			':tableId' => $id
 		]);
-		
-		for ($i=0; $i < count($dow) * count($units); $i++) { 
+
+		for ($i=0; $i < count($dow) * count($units); $i++) {
 			$sql = "INSERT INTO Answers (tableId, userId, cell, answer, createdTime) VALUES (:id, :userId, :cell, :answer, now());";
 			$statement = $pdo -> prepare($sql);
 			$result = $statement -> execute([
@@ -58,9 +58,7 @@
 				exit();
 			}
 		}
-		
 
-		
 
 		//--- ver1.0 ---//
 		#データ更新
@@ -120,7 +118,7 @@
 						foreach ($units as $row) {
 							foreach ($row as $name => $unit) {
 								echo '<tr class="num">' , '<th>' , $unit , '</th>' ; //行の作成、見出しの入力（n時限目）
-								for ($i=0; $i < count($dow); $i++) { 
+								for ($i=0; $i < count($dow); $i++) {
 									echo '<td id="', $i+$j ,'" class="ng" onClick="judge(', $i+$j ,')"> <input type="hidden" name="ans[]" id="a', $i+$j ,'" value="0"> </td>';
 								}
 								echo '</tr>' , PHP_EOL;
@@ -131,9 +129,9 @@
 						//--- ver1.0 ---//
 						// //テーブル生成（各tdにidを割り振る）
 						// $idum = 0;
-						// for ($i = 1; $i < 6 ; $i++) { 
+						// for ($i = 1; $i < 6 ; $i++) {
 						// 	echo '<tr>','<th>', $i ,'</th>';
-						// 	for ($j = 1; $j < 6 ; $j++) { 
+						// 	for ($j = 1; $j < 6 ; $j++) {
 			 			// 			echo '<td ' , 'id="'.$idum.'" ' , 'class="ng"' , ' onClick="judge('.$idum.')"' , '>' , '<input type="hidden" name="ans[]"'.' id="a'.$idum.'"'.' value="0">' , '</td>';//各tdにidを発行（クリックイベント用）、onClickで各idを渡す。
 	 					// 			$idum++;
 						// 	}
@@ -154,6 +152,7 @@
 		</div>
 	</form>
 	</div>
+</div>
 </div>
 
 <?php include('footer.html'); ?>

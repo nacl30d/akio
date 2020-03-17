@@ -81,7 +81,7 @@
 	// 		$max3 = $value;
 	// 	}
 	// }
-	
+
 	// #得たansをテーブルに起こしやすくするため加工
 	// $table = array_chunk($ans, 5, true); //5つごとに2次元化
 
@@ -109,7 +109,7 @@
 			echo '<h5>', $info['note'], '</h5>', PHP_EOL;
 		?>
 	</div>
-</div>	
+</div>
 
 <div class="row">
     <div class="col l6 offset-l3 s12 ">
@@ -133,7 +133,7 @@
 				foreach ($units as $row) {
 					foreach ($row as $name => $unit) {
 						echo '<tr class="num">' , '<th>' , $unit , '</th>' ; //行の作成、見出しの入力（n時限目）
-						for ($i=0; $i < count($dow); $i++) { 
+						for ($i=0; $i < count($dow); $i++) {
 							echo '<td>',$answers[$i+$j]['sum(answer)'] ,'</td>';
 						}
 						echo '</tr>' , PHP_EOL;
@@ -147,18 +147,18 @@
 					// foreach ($row as $cell) {
 					// 	//各セルに値を入力
 					// 	if ($cell == 0) {
-					// 		echo '<td class="zero">' , $cell , '</td>'; 
+					// 		echo '<td class="zero">' , $cell , '</td>';
 					// 	} else if ($cell == $max1) {
-					// 		echo '<td class="max">' , $cell , '</td>'; 
+					// 		echo '<td class="max">' , $cell , '</td>';
 					// 	} else if ($cell == $max2) {
-					// 		echo '<td class="mass">' , $cell , '</td>'; 
+					// 		echo '<td class="mass">' , $cell , '</td>';
 					// 	} else if ($cell == $max3) {
-					// 		echo '<td class="less">' , $cell , '</td>'; 
+					// 		echo '<td class="less">' , $cell , '</td>';
 					// 	} else {
-					// 		echo '<td class="zero">' , $cell , '</td>'; 
+					// 		echo '<td class="zero">' , $cell , '</td>';
 					// 	}
 					// }
-					
+
 				// }
 			?>
 		</table>
@@ -192,8 +192,8 @@
 		<!-- LINE -->
 		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" <?php echo 'data-url="http://http://akico.azurewebsites.net/result.php?id='.$id.'"' ?>></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 	</div>
-</div>	
-	
+</div>
+
 
 <?php include('footer.html'); ?>
 

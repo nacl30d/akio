@@ -37,7 +37,7 @@
 		header("Location: $redirect");
 		exit();
 	}
-	
+
 ?>
 
 
@@ -51,7 +51,7 @@
 <?php include('./header.html'); ?>
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
-　
+
 	<h1 class="header center green-text">ようこそ！</h1>
 
 	 <div class="row center">
@@ -73,7 +73,7 @@
         <img src="/img/OGP.png" alt="AKIO" />
       </div>
     </div>
-		
+
 		<p>空きコマをみんなで合わせる「空きコマ調整ツール」その名もAKIOくん。
 		現在開発途中のβ版です。最低限の機能を実装したので公開していますが、まだまだ至らないところも多いと思います。温かい目で見守っていてください。</p>
 	</div>
@@ -125,7 +125,7 @@
         </div>
     </div>
 </div>
-            
+
 
 
 <div class="row center">
@@ -136,12 +136,12 @@
 		</span>
 			<form action="" method="POST">
       <div class="input-field">
-        <input id="icon_prefix" type="text" class="validate" name="formName">
-        <label for="icon_prefix">予定のタイトル</label>
+        <input id="form-title" type="text" class="validate" name="formName">
+        <label for="form-title">予定のタイトル</label>
       </div>
       <div class="input-field">
-        <input id="icon_prefix" type="text" class="validate" name="notice">
-        <label for="icon_prefix">内容・コメント</label>
+        <input id="form-comment" type="text" class="validate" name="notice">
+        <label for="form-comment">内容・コメント</label>
       </div>
 				<!-- <p>幹事パスワード：</p><input type="password" value="" name="passwd"> -->
 				<input class="btn" type="submit" value="作成" name="create">

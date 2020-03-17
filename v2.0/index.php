@@ -7,7 +7,7 @@
 		$id = uniqid("",1);
 
 		$pdo = connectDB();
-		
+
 		$sql = "INSERT INTO TimeTables VALUES (:id, :name, :note, :passwd, now());";
 		$statement = $pdo -> prepare($sql);
 		$result = $statement->execute([
@@ -51,7 +51,7 @@
 		header("Location: $redirect");
 		exit();
 	}
-	
+
 ?>
 
 
@@ -65,7 +65,7 @@
 <?php include('./header.html'); ?>
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
-　
+
 	<h1 class="header center green-text">ようこそ！</h1>
 
 	 <div class="row center">
@@ -79,9 +79,7 @@
 <div class="container">
 <div class="row center">
 	<div id="about" class="col s12">
-	<span class="headline">
-  		<h2 class="headline__title">About</h2>
-	</span>
+  		<h2 class="headline headline__title">About</h2>
     <div class="card horizontal">
       <div class="card-image">
         <img src="/img/OGP.png" alt="AKIO" />
@@ -94,9 +92,7 @@
 
 <div class="row center">
 	<div id="howto" class="col s12 l12">
-		<span class="headline">
-  			<h2 class="headline__title">使い方</h2>
-		</span>
+		<h2 class="headline headline__title">使い方</h2>
 		<p>使い方は簡単！代表者が時間割を作成してURLを共有。あとはみんながそれに空きコマ情報を登録するだけ！</p>
 	</div>
 
@@ -137,62 +133,61 @@
         </div>
     </div>
 </div>
-            
+
 
 
 <div class="row center">
-	<div class="col s12">
-	<span class="headline">
-  			<h2 class="headline__title">時間割を作成</h2>
-	</span>
-	</div>
-    <div id="create" class="col s12 m7 l6 ">
-		<form action="" method="POST">
-		     <div class="input-field">
-        		<input type="text" class="validate" name="name" />
-		        <label for="icon_prefix">予定のタイトル</label>
-		     </div>
-		     <div class="input-field">
-		        <input type="text" class="validate" name="note" />
-		        <label for="icon_prefix">内容・コメント</label>
-		     </div>
-			<div class="input-field">
-			  	<input type="password" class="valib" name="passwd" />
-			  	<label for="icon_prefix">幹事パスワード</label>
-			</div>
-	</div>
+  <div class="col s12">
+    <h2 class="headline headline__title">時間割を作成</h2>
+  </div>
 
-	<div class="col s12 m7 l6">
-		  	<table>
-		  		<tbody id="createForm">
+	<form action="" method="POST">
+	  <div id="create" class="col s12 m7 l6 ">
+	    <div class="input-field">
+   		  <input type="text" class="validate" name="name" />
+		  <label for="icon_prefix">予定のタイトル</label>
+		</div>
+		<div class="input-field">
+		  <input type="text" class="validate" name="note" />
+		  <label for="icon_prefix">内容・コメント</label>
+		</div>
+		<div class="input-field">
+		  <input type="password" class="valib" name="passwd" />
+		  <label for="icon_prefix">幹事パスワード</label>
+		</div>
+	  </div>
+
+	  <div class="col s12 m7 l6">
+	  	<table>
+		  <tbody id="createForm">
 	  			<!-- ここもAjaxにしちゃう？？JSで扱うならクライアントサイドの方が変数の扱いとか楽かも。（2018-01-04） -->
-			  	<?php
-			  	$dow = array('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun');
-			  	$unit = array('1', '2', 'Lunch', '3', '4', '5', '6', '7', '8', '9', '10');
-				echo '<tr id="day"><th></th>';
-				for($i = 0; $i < 5; $i++){
-					echo '<th><input type="text" value="'. $dow[$i] .'" name="d'. $i .'" /></th>';
+		  	<?php
+		   	  $dow = array('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun');
+			  $unit = array('1', '2', 'Lunch', '3', '4', '5', '6', '7', '8', '9', '10');
+			  echo '<tr id="day"><th></th>';
+			  for($i = 0; $i < 5; $i++){
+				echo '<th><input type="text" value="'. $dow[$i] .'" name="d'. $i .'" /></th>';
+			  }
+			  echo '<td class="clr"><input type="button" value="+" id="addDay" onclick="addCol()" /></td></tr>', PHP_EOL;
+			  echo '</tr>', PHP_EOL;
+			  for($i = 0; $i < 6; $i++){
+				echo '<tr id="r'. $i .'"><th><input type="text" value="'. $unit[$i] .'" name="u'. $i .'" /></th>';
+				for ($j=0; $j < 5; $j++) {
+				  echo '<td></td>';
 				}
-				echo '<td class="clr"><input type="button" value="+" id="addDay" onclick="addCol()" /></td></tr>', PHP_EOL;
-				echo '</tr>', PHP_EOL;
-				for($i = 0; $i < 6; $i++){
-					echo '<tr id="r'. $i .'"><th><input type="text" value="'. $unit[$i] .'" name="u'. $i .'" /></th>';
-					for ($j=0; $j < 5; $j++) { 
-						echo '<td></td>';
-					}
-					echo '</tr>', PHP_EOL;
-				}
-				?>
-				</tbody>
-				<tbody>
-				<?php
-					echo '<td class="clr"><input type="button" value="+" id="addUnit" onclick="addRow()" /></td></tr>', PHP_EOL;
-				?>
-				</tbody>
-			</table>
-	</div>
-		<input class="btn" type="submit" value="作成" name="create" />
-		</form>
+			    echo '</tr>', PHP_EOL;
+			  }
+			?>
+		  </tbody>
+		  <tbody>
+			<?php
+			  echo '<td class="clr"><input type="button" value="+" id="addUnit" onclick="addRow()" /></td></tr>', PHP_EOL;
+			?>
+		  </tbody>
+		</table>
+	  </div>
+	  <input class="btn" type="submit" value="作成" name="create" />
+	</form>
 </div>
 
 </div>
