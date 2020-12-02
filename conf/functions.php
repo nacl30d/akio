@@ -4,10 +4,10 @@
 function connectDB()
 {
     require_once('./conf/config.php');
-	$dsn = "mysql:dbname=$db_name;host=$host;port=$port;charset=utf8;";
-	
+	$dsn = "{$db['provider']}:dbname={$db['database']};host={$db['host']};port={$db['port']};";
+
 	try {
-		$pdo = new PDO($dsn, $db_user, $db_passwd);
+		$pdo = new PDO($dsn, $db['username'], $db['password']);
 	} catch (PDOException $e) {
 		die('DB Connection Faild');
 	}
