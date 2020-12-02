@@ -9,7 +9,7 @@
 	$pdo = connectDB();
 	#時間割情報をDBから取得し、変数$ansに格納（id以外）
 	//全般的な情報を取得
-	$sql = "SELECT formName, notice FROM informations WHERE n = :n;";
+	$sql = "SELECT formname, notice FROM informations WHERE n = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$info = $statement->fetch(PDO::FETCH_ASSOC);
@@ -19,7 +19,7 @@
 		exit('DB Effor A(faild to get record)');
 	}
 	//時間割情報を取得
-	$sql = "SELECT sum(mon1), sum(tue1), sum(wed1), sum(thu1), sum(fri1), sum(mon2), sum(tue2), sum(wed2), sum(thu2), sum(fri2), sum(mon3), sum(tue3), sum(wed3), sum(thu3), sum(fri3), sum(mon4), sum(tue4), sum(wed4), sum(thu4), sum(fri4), sum(mon5), sum(tue5), sum(wed5), sum(thu5), sum(fri5) FROM answers WHERE n = :n;";
+	$sql = "SELECT sum(mon1) as mon1, sum(tue1) as tue1, sum(wed1) as wed1, sum(thu1) as thu1, sum(fri1) as fri1, sum(mon2) as mon2, sum(tue2) as tue2, sum(wed2) as wed2, sum(thu2) as thu2, sum(fri2) as fri2, sum(mon3) as mon3, sum(tue3) as tue3, sum(wed3) as wed3, sum(thu3) as thu3, sum(fri3) as fri3, sum(mon4) as mon4, sum(tue4) as tue4, sum(wed4) as wed4, sum(thu4) as thu4, sum(fri4) as fri4, sum(mon5) as mon5, sum(tue5) as tue5, sum(wed5) as wed5, sum(thu5) as thu5, sum(fri5) as fri5 FROM answers WHERE n = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$ans = $statement->fetch(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
@@ -39,7 +39,7 @@
 		exit('DB Error C (faild to get record)');
 	}
 	//行数を取得
-	$sql = "SELECT count(name) FROM answers WHERE n = :n;";
+	$sql = "SELECT count(name) as name FROM answers WHERE n = :n;";
 	$statement = $pdo -> prepare($sql);
 	$statement->execute([':n' => $n]);
 	$count = $statement->fetch(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
@@ -76,7 +76,7 @@
 <html lang="ja">
 <head>
 	<?php include('meta.php'); ?>
-	<title><?php echo h($info['formName']); ?>｜AKIO</title>
+	<title><?php echo h($info['formname']); ?>｜AKIO</title>
 </head>
 <body>
 <?php include('header.html'); ?>
@@ -84,7 +84,7 @@
 <div class="row">
     <div class="col l6 offset-l3 s12 ">
 		<?php
-			echo '<h1 class="header green-text">', $info['formName'], '</h1>', PHP_EOL;
+			echo '<h1 class="header green-text">', $info['formname'], '</h1>', PHP_EOL;
 			echo '<h5>', $info['notice'], '</h5>', PHP_EOL;
 		?>
 	</div>
@@ -124,7 +124,7 @@
 </div>
 <div class="row">
     <div class="col l6 offset-l3 s12 ">
-  			<?php echo '<h5 class="green-text">答えてくれた人（ ', $count['count(name)'] ,'人）</h5>';?>
+  			<?php echo '<h5 class="green-text">答えてくれた人（ ', $count['name'] ,'人）</h5>';?>
   	</div>
 </div>
 <div class="row center">
