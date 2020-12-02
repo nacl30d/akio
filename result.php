@@ -15,7 +15,7 @@
 	$info = $statement->fetch(PDO::FETCH_ASSOC);
 	if (!$info) {
 		http_response_code( 404 ) ;
-		header( "Location: http://akico.azurewebsites.net/404.html" ) ;
+		header( "Location: {$url}/404.html" ) ;
 		exit('DB Effor A(faild to get record)');
 	}
 	//時間割情報を取得
@@ -25,7 +25,7 @@
 	$ans = $statement->fetch(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
 	if (!$ans) {
 		http_response_code( 404 ) ;
-		header( "Location: http://akico.azurewebsites.net/404.html" ) ;
+		header( "Location: {$url}/404.html" ) ;
 		exit('DB Error B (faild to get record)');
 	}
 	//名前を取得
@@ -35,7 +35,7 @@
 	$name = $statement->fetchAll(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
 	if (!$name) {
 		http_response_code( 404 ) ;
-		header( "Location: http://akico.azurewebsites.net/404.html" ) ;
+		header( "Location: {$url}/404.html" ) ;
 		exit('DB Error C (faild to get record)');
 	}
 	//行数を取得
@@ -45,7 +45,7 @@
 	$count = $statement->fetch(PDO::FETCH_ASSOC); //fetch_assoc属性がないとインデックス付配列というオマケがつく
 	if (!$count) {
 		http_response_code( 404 ) ;
-		header( "Location: http://akico.azurewebsites.net/404.html" ) ;
+		header( "Location: {$url}/404.html" ) ;
 		exit('DB Error D (faild to get record)');
 	}
 
@@ -75,7 +75,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<?php include('meta.html'); ?>
+	<?php include('meta.php'); ?>
 	<title><?php echo h($info['formName']); ?>｜AKIO</title>
 </head>
 <body>
@@ -146,14 +146,14 @@
 			</form>
 		</div>
   		<h5 class="green-text">共有</h5>
-		<?php echo '<input type="text" name="url" value="http://akico.azurewebsites.net/result.php?n='.$_GET['n'].'" onclick="this.select(0,this.value.length)">'; ?>
+		<?php echo '<input type="text" name="url" value="'.$url.'result.php?n='.$_GET['n'].'" onclick="this.select(0,this.value.length)">'; ?>
 		<!-- LINE -->
-		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" data-url="http://http://akico.azurewebsites.net/result.php?n=<?= $n ?>"></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+		<div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" data-url="http://<?= $url ?>/result.php?n=<?= $n ?>"></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 	</div>
 </div>
 
 
-<?php include('footer.html'); ?>
+<?php include('footer.php'); ?>
 
 </body>
 </html>

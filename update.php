@@ -41,7 +41,7 @@
 ?>
 
 <!DOCTYPE html>
-<?php include('meta.html') ?>
+<?php include('meta.php') ?>
 	<title>予定を入力｜AKIO</title>
  </head>
 <body>
@@ -90,7 +90,7 @@
 	</div>
 </div>
 
-<?php include('footer.html'); ?>
+<?php include('footer.php'); ?>
 
 </body>
 </html>

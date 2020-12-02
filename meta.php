@@ -1,3 +1,4 @@
+<?= require('./conf/config.php'); ?>
 <meta charset="utf-8">
 	<!-- GoogleAnalytics -->
 	<script>
@@ -41,12 +42,10 @@
 	<meta name="description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO">
 	<meta property="og:site-name" content="AKIO|空きコマ調整ツール"/>
 	<meta property="og:description" content="忙しい大学生たちの味方！サークルのメンバーと、ゼミの仲間たちと、友達と、空きコマを照らし合わせることに特化した空きコマ調整ツール：AKIO"/>
-	<meta property="og:image" content="http://akico.azurewebsites.net/img/OGP.png"/>
+	<meta property="og:image" content="<?= $url ?>/img/OGP.png"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:title" content="AKIKO" />
-	<meta property="og:url" content="http://akico.azurewebsites.net/" />
+	<meta property="og:url" content="<?= $url ?>" />
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:image:src" content="http://akico.azurewebsites.net/img/AKIO.png" />
+	<meta name="twitter:image:src" content="<?= $url ?>/img/AKIO.png" />
   	<link rel="apple-touch-icon" href="/img/AKIO.png" />
-	
-

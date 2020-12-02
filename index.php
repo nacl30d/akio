@@ -44,7 +44,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<?php include('./meta.html'); ?>
+	<?php include('./meta.php'); ?>
 	<title>AKIO</title>
 </head>
 <body>
@@ -151,6 +151,6 @@
 </div>
 
 </div>
-<?php include('footer.html'); ?>
+<?php include('footer.php'); ?>
 </body>
 </html>

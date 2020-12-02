@@ -6,7 +6,7 @@
           <h5 class="white-text">D.Salt</h5>
           <p class="grey-text text-lighten-4">This tool made for University Students. I hope your campus life will be better.</p>
         </div>
-        <div class="col l3 s12">	
+        <div class="col l3 s12">
           <h5 class="white-text">Special Thanks</h5>
           <ul>
             <li><a class="white-text" href="https://www.nifty.com/" target="_bla">nifty</a></li>
@@ -19,11 +19,11 @@
           <h5 class="white-text">Share</h5>
           <ul>
           	<!-- LINE -->
-            <li><div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" data-url="http://http://akico.azurewebsites.net//"></div></li>
+            <li><div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-a" data-url="<?= $url ?>"></div></li>
             <!-- Twitter -->
             <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></li>
             <!-- Facebook -->
-            <li><div class="fb-share-button" data-href="http://http://akico.azurewebsites.net/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhttp://akico.azurewebsites.net/%2F&amp;src=sdkpreparse">シェア</a></div></li>
+            <li><div class="fb-share-button" data-href="<?= $url ?>" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?= $url ?>%2F&amp;src=sdkpreparse">シェア</a></div></li>
           </ul>
         </div>
       </div>
