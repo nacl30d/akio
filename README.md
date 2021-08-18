@@ -1,4 +1,4 @@
-AKIO [![Maintainability](https://api.codeclimate.com/v1/badges/046a6943475ada34e026/maintainability)](https://codeclimate.com/github/d-salt/akio/maintainability)  
+AKIO [![Maintainability](https://api.codeclimate.com/v1/badges/9ae2098eb4815d28a9d4/maintainability)](https://codeclimate.com/github/nacl30d/akio/maintainability)
 =
 
 ![AKIO](./img/OGP.png)
